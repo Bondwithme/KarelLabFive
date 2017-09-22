@@ -20,6 +20,7 @@ public class TreasureBot extends Robot
             move();
         }
         if(nextToABeeper()) {
+            
             while(nextToABeeper()) {
                 pickBeeper();
                 beepers++;
@@ -31,10 +32,10 @@ public class TreasureBot extends Robot
                 faceEast();
             }
             else if(beepers==3) {
-                faceWest();
+                faceSouth();
             }
             else if(beepers==4) {
-                faceSouth();
+                faceWest();
             }
             else if(beepers==5) {
                 treasureFound = true;
